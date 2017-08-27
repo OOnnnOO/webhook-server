@@ -1,23 +1,34 @@
 const http = require('http')
+const url = require('url')
+const querystring = require('querystring')
+const config = require('./config')
 const {
   exec
 } = require('child_process')
-const PORT = 9988
-const PATH = '/var/www/oonnnoo/test/'
+const PORT = config.port
 
 const server = http.createServer(function (request, response) {
-  if (request.url.search(/deploy\/?$/i) > 0 && require) {
+  // 获取URL的query部分的值
+  let query = url.parse(request.url).query
+  // 将query部分值转换成json格式
+  let obj = querystring.parse(query)
+  // 获取project名，并通过config.json中查找到项目所在文件夹，并在项目文件执行命令。
+  let project = obj.project
+  if (config.projects[project]) {
+    let dir = config.projects[project].path
     let commands = [
-      'cd ' + PATH,
+      'cd ' + dir,
+      'git clean -f',
       'git pull'
-    ].join(' && ');
+    ].join(' && ')
+    console.log(commands)
 
     exec(commands, (error, stdout, stderr) => {
       if (error) {
-        console.error(`exec error: ${error}`);
+        console.error(`exec error: ${error}`)
         response.writeHead(500)
         response.end('Server Internal Error.')
-        return;
+        return
       }
       console.log(`stdout: ${stdout}`)
       console.log(`stderr: ${stderr}`)

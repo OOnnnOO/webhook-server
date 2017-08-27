@@ -1,0 +1,27 @@
+{
+  "hostname": "0.0.0.0",
+  "port": "9988",
+  "projects": {
+    "apt": {
+      "path": "/var/www/oonnnoo/proxy/apt"
+    },
+    "case": {
+      "path": "/var/www/oonnnoo/case"
+    },
+    "doc": {
+      "path": "/var/www/oonnnoo/doc"
+    },
+    "o": {
+      "path": "/var/www/oonnnoo/o"
+    },
+    "s": {
+      "path": "/var/www/oonnnoo/s"
+    },
+    "todo": {
+      "path": "/var/www/oonnnoo/todo"
+    },
+    "test": {
+      "path": "/var/www/oonnnoo/test"
+    }
+  }
+}
