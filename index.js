@@ -7,6 +7,7 @@ const {
 } = require('child_process')
 const PORT = config.port
 
+// URL: http://deploy.oonnnoo.com:9988?project=test-oonnnoo-com
 const server = http.createServer(function (request, response) {
   // 获取URL的query部分的值
   let query = url.parse(request.url).query

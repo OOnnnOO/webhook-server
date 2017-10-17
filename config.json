@@ -2,26 +2,63 @@
   "hostname": "0.0.0.0",
   "port": "9988",
   "projects": {
-    "apt": {
-      "path": "/var/www/oonnnoo/proxy/apt"
-    },
-    "case": {
-      "path": "/var/www/oonnnoo/case"
-    },
-    "doc": {
-      "path": "/var/www/oonnnoo/doc"
-    },
-    "o": {
-      "path": "/var/www/oonnnoo/o"
-    },
-    "s": {
-      "path": "/var/www/oonnnoo/s"
-    },
-    "todo": {
-      "path": "/var/www/oonnnoo/todo"
-    },
-    "test": {
-      "path": "/var/www/oonnnoo/test"
-    }
+   "api-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/"
+   },
+   "apt-proxy-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/proxy/apt/"
+   },
+   "case-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/case/"
+   },
+   "chat-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/"
+   },
+   "day-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/day/"
+   },
+   "map-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/map/"
+   },
+   "mos-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/mos/"
+   },
+   "o-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/o/"
+   },
+   "pin-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/pin/"
+   },
+
+   "project-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/project/"
+   },
+   "proxy-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/proxy/"
+   },
+   "s-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/s/"
+   },
+   "sandbox-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/sandbox/"
+   },
+   "static-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/static/"
+   },
+   "start-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/start/"
+   },
+   "story-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/story/"
+   },
+   "test-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/test/"
+   },
+   "upload-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/upload/"
+   },
+   "www-oonnnoo-com":{
+     "path":"/var/www/oonnnoo/www/"
+   }
   }
 }
