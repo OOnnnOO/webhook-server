@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/pm2/bin/pm2 start index.js"
+    "start": "node index.js",
+    "pm2": "./node_modules/pm2/bin/pm2 start index.js"
   },
   "author": "",
   "license": "ISC"
